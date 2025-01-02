@@ -1,17 +1,16 @@
-**NAME:SOMESHWAR S**
+### NAME: SOMESHWAR S
+### REF NO : 24006709
+# EXPERIMENT 7 : IMPLEMENTATION OF SYNCHRONOUS UPCOUNTER
 
-**REGNO:24006709**
-## EXPERIMENT 7: SYNCHRONOUS UP COUNTER
-
-## AIM:
+# AIM:
 
 To implement 4 bit synchronous up counter and validate functionality.
 
-## SOFTWARE REQUIRED:
+# SOFTWARE REQUIRED:
 
 Quartus prime
 
-## 4 bit synchronous UP Counter:
+# 4 bit synchronous UP Counter
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
 
@@ -27,7 +26,7 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
-## Procedure :
+# Procedure
 1. Type the program in Quartus software.
 
 2. Compile and run the program.
@@ -38,13 +37,16 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 5. For different input combinations generate the timing diagram.
 
-## PROGRAM :
+# PROGRAM
 ![Screenshot 2024-12-23 104115](https://github.com/user-attachments/assets/813ce90d-a608-435b-a7a5-ef0aec49ae38)
 
-## RTL LOGIC UP COUNTER :
+# RTL LOGIC UP COUNTER
 ![Screenshot 2024-12-23 104129](https://github.com/user-attachments/assets/7221d353-e152-4abd-b914-be8dc98f89da)
 
-## TIMING DIAGRAM FOR IP COUNTER :
-![Screenshot 2024-12-22 133044](https://github.com/user-attachments/assets/754ee35c-761d-45a1-90c1-0a6a12111fdf)
-## RESULTS :
-Implemented 4 bit synchronous up counter and validate functionality.
+# TIMING DIAGRAM FOR IP COUNTER
+![Screenshot 2024-12-30 201741](https://github.com/user-attachments/assets/ad1c239d-210e-4fe8-9be4-dcd530dd0946)
+
+
+
+# RESULT
+Implemented 4 bit synchronous up counter and validated functionality.
